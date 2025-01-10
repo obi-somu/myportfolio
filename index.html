@@ -3,390 +3,439 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SOMUADINA</title>
+    <title>Clinton Obi - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- Desktop nav  -->
-    <nav id="desktop-nav">
-      <div class="logo">OBI SOMUADINA</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Clinton Obi</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certifications">Certifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <!-- Mobile Nav -->
-    <nav id="hamburger-nav">
-      <div class="logo">OBI SOMUADINA</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#project" onclick="toggleMenu()">Project</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <!-- Profile section -->
-    <section id="profile">
-      <div class="section_pic_container">
-        <img src="assets/profile-pic.png" alt="Somuadina profile picture" />
-      </div>
-      <div class="section_text">
-        <p class="section_text_p1">Hello I am</p>
-        <h1 class="title">OBI SOMUADINA</h1>
-        <p class="section_text_p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-1"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-2" onclick="location.href='./#contact'">
-            Contact Me
-          </button>
-        </div>
-
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn Profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/obisomu/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My github Profile"
-            class="icon"
-            onclick="location.href='https://www.github.com/'"
-          />
+    <!-- Profile Section -->
+    <section id="profile" class="py-5">
+      <div class="container text-center">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="assets/profile-pic.jpg"
+              alt="Clinton Obi"
+              class="img-fluid rounded-circle"
+              width="200"
+              height="200"
+            />
+          </div>
+          <div class="col-md-6">
+            <h1 class="display-4">Clinton Obi</h1>
+            <p class="lead">
+              Founder @ByteBazzar 📚 | Python Dev 🐍 | Blockchain & AI
+              Enthusiast 🤖 | Data Analyst 📊 | Author ✍️
+            </p>
+            <div class="mt-4">
+              <a
+                href="assets/resume-example.pdf"
+                class="btn btn-primary btn-lg"
+                download
+                >Download CV</a
+              >
+              <a href="#contact" class="btn btn-outline-primary btn-lg"
+                >Contact Me</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- About section -->
-    <section id="about">
-      <p class="section_text_p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section_pic_container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about_details_container">
-          <div class="about-container">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>
-                3 years <br />
-                Frontend Development
-              </p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>
-                B.Sc Bachelors Degree <br />
-                Computer Science
-              </p>
-            </div>
-          </div>
-          <div class="text-container">
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row">
+          <div class="col-md-6">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates corporis quidem beatae voluptatum ex qui omnis nobis
-              magni necessitatibus magnam?
+              I am a results-driven IT and business professional with over 12
+              years of experience in technical support, data analysis,
+              logistics, and entrepreneurship. As the founder of ByteBazzar
+              Publications, I spearheaded data-driven strategies that increased
+              audience engagement by 40% and built scalable data infrastructure,
+              reducing analytics processing time by 50%. At Etisiobi Nig. Ltd, I
+              optimized logistics operations, cutting costs by 15% through
+              predictive analytics and route optimization, while improving
+              inventory accuracy by 20%. Proficient in Python, SQL, and data
+              visualization tools, I excel at transforming complex data into
+              actionable insights, driving measurable outcomes, and solving
+              business challenges. My expertise spans IT systems management,
+              machine learning, and process optimization, making me a versatile
+              asset for organizations seeking innovative solutions and
+              operational excellence.
             </p>
           </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="arrow icon"
-        class="icon arrow"
-        onclick="location.href='.#experience'"
-      />
-    </section>
-
-    <!-- Experience section -->
-    <section id="experience">
-      <p class="section_text_p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-container">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Beginner</p>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <h5 class="card-title">Experience</h5>
+                    <p class="card-text">12+ Years</p>
+                  </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Beginner</p>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="card text-center">
+                  <div class="card-body">
+                    <h5 class="card-title">Education</h5>
+                    <p class="card-text">Higher National Diploma</p>
+                  </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Beginner</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Beginner</p>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <!-- Backend  -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>POSTgreSQL</h3>
-                  <p>Beginner</p>
-                </div>
-              </article>
-
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>NodeJS</h3>
-                  <p>Beginner</p>
-                </div>
-              </article>
-
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Beginner</p>
-                </div>
-              </article>
-
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Php</h3>
-                  <p>Beginner</p>
-                </div>
-              </article>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="arrow icon"
-        class="icon arrow"
-        onclick="location.href='.#experience'"
-      />
     </section>
 
-    <!-- Project section -->
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Experience</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">ByteBazzar Publications</h5>
+                <p class="card-subtitle mb-2 text-muted">12/2020 – Current</p>
+                <ul>
+                  <li>Increased audience engagement by 40%.</li>
+                  <li>Built scalable data infrastructure.</li>
+                  <li>Leveraged machine learning models.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Etisiobi Nig. Ltd</h5>
+                <p class="card-subtitle mb-2 text-muted">11/2022 – Current</p>
+                <ul>
+                  <li>Reduced logistics costs by 15%.</li>
+                  <li>Increased inventory accuracy by 20%.</li>
+                  <li>Developed KPI dashboards.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Institute of Management and Technology
+                </h5>
+                <p class="card-subtitle mb-2 text-muted">11/2018 – 10/2019</p>
+                <ul>
+                  <li>Enhanced system security by 20%.</li>
+                  <li>Streamlined hardware and software setup.</li>
+                  <li>Ensured 99% uptime.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section id="project">
-      <p class="section_text_p1">Browse My Recent</p>
-      <h1 class="title">Project</h1>
-      <div class="experience-details-container">
-        <div class="about-container">
-          <div class="details-container color-container">
-            <div class="article-container">
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
               <img
                 src="assets/project-1.png"
+                class="card-img-top"
                 alt="Project 1"
-                class="project-img"
               />
-            </div>
-            <h2 class="experience-sub-title" project-title>Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.github.com/'"
-              >
-                Live Demo
-              </button>
+              <div class="card-body">
+                <h5 class="card-title">Python Data Analysis</h5>
+                <p class="card-text">
+                  Analyzed a large dataset using Pandas and Matplotlib.
+                </p>
+                <a href="https://github.com" class="btn btn-primary">GitHub</a>
+              </div>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
+          <div class="col-md-4 mb-4">
+            <div class="card">
               <img
                 src="assets/project-2.png"
+                class="card-img-top"
                 alt="Project 2"
-                class="project-img"
               />
-            </div>
-            <h2 class="experience-sub-title" project-title>Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.github.com/'"
-              >
-                Live Demo
-              </button>
+              <div class="card-body">
+                <h5 class="card-title">Solidity Programming Course</h5>
+                <p class="card-text">
+                  Developed a beginner-friendly course on Solidity.
+                </p>
+                <a href="https://github.com" class="btn btn-primary">GitHub</a>
+              </div>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
+          <div class="col-md-4 mb-4">
+            <div class="card">
               <img
                 src="assets/project-3.png"
+                class="card-img-top"
                 alt="Project 3"
-                class="project-img"
               />
-            </div>
-            <h2 class="experience-sub-title" project-title>Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.github.com/'"
-              >
-                Live Demo
-              </button>
+              <div class="card-body">
+                <h5 class="card-title">AI Prompting Guide</h5>
+                <p class="card-text">
+                  Authored a practical guide on AI Prompting.
+                </p>
+                <a href="https://github.com" class="btn btn-primary">GitHub</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <img
-        src="./assets/arrow.png"
-        alt="arrow icon"
-        class="icon arrow"
-        onclick="location.href='.#experience'"
-      />
     </section>
 
-    <!-- Contact Section  -->
-
-    <section id="contact">
-      <p class="section_text_p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon"
-          />
-
-          <p>
-            <a href="mailto:examplemail@gmail.com"> examplemail@gmail.com</a>
-          </p>
-        </div>
-
-        <div class="contact-info-container">
-          <img
-            src="assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-
-          <p>
-            <a href="https://www.linkedin.com"> linkedin</a>
-          </p>
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Certifications</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Python Programming</h5>
+                <p class="card-text">Udemy Inc.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Data Analysis</h5>
+                <p class="card-text">LinkedIn</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Git Essentials</h5>
+                <p class="card-text">Eduonix</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Tableau Essentials</h5>
+                <p class="card-text">LinkedIn</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Digital Marketing</h5>
+                <p class="card-text">Google</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Pandas</h5>
+                <p class="card-text">Kaggle</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer  -->
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row">
+          <!-- Technical Skills Card -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center">Technical Skills</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="fas fa-code me-2"></i>Python</li>
+                  <li class="mb-2"><i class="fas fa-database me-2"></i>SQL</li>
+                  <li class="mb-2"><i class="fab fa-git-alt me-2"></i>Git</li>
+                  <li class="mb-2">
+                    <i class="fas fa-chart-line me-2"></i>PowerBI
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-file-excel me-2"></i>Microsoft Excel
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-book me-2"></i>Jupyter Notebooks
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-    <footer>
-      <nav class="nav-links">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <p>Copyright &#169; 2023 ByteBazzar Inc.. All Rights Reserved</p>
+          <!-- Soft Skills Card -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center">Soft Skills</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="fas fa-lightbulb me-2"></i>Problem-Solving
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-comments me-2"></i>Communication
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-users me-2"></i>Collaboration
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-sync-alt me-2"></i>Adaptability
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-search me-2"></i>Technical Research
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Languages</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">English</h5>
+                <p class="card-text">Fluent</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">Igbo</h5>
+                <p class="card-text">Native</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <h5 class="card-title">French</h5>
+                <p class="card-text">Beginner</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">Contact Me</h2>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/obisomu/"
+            target="_blank"
+            class="btn btn-outline-primary btn-lg"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            class="btn btn-outline-primary btn-lg"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="mailto:realclintonobi@gmail.com"
+            class="btn btn-outline-primary btn-lg"
+          >
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light py-3">
+      <div class="container text-center">
+        <p class="mb-0">
+          Copyright &#169; 2023 Clinton Obi. All Rights Reserved.
+        </p>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
   </body>
 </html>
