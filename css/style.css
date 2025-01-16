@@ -58,3 +58,20 @@ body {
 #skills .fa {
   color: #007bff; /* Bootstrap primary color */
 }
+
+/* Contact Section */
+#contact .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#contact .btn {
+  margin: 0.5rem;
+  min-width: 150px; /* Ensures buttons have a consistent width */
+}
+
+#contact .btn i {
+  margin-right: 0.5rem;
+}
