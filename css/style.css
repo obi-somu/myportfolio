@@ -16,22 +16,29 @@ body {
   padding-top: 100px;
 }
 
+.col-md-6 p.lead {
+  text-align: left;
+}
+
 .card {
   overflow: hidden;
-  width: 350px; 
+  /* width: 350px;  */
   height: 100%;
   text-align: left;
   text-shadow: #007bff;
-  border-radius: 5px;
-  padding: 10px;
-  box-sizing: border-box; 
+  border-radius: 10px;
+  padding: 5px;
+  box-sizing: content-box; 
   transition: transform 0.3s ease;
 }
-
+.col-md-6 p.about-text {
+  text-align: justify;
+}
 
 .card:hover {
   transform: translateY(-10px);
 }
+
 
 .social-icons .btn {
   margin: 0 10px;
