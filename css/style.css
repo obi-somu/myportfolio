@@ -17,8 +17,17 @@ body {
 }
 
 .card {
+  overflow: hidden;
+  width: 350px; 
+  height: 100%;
+  text-align: left;
+  text-shadow: #007bff;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box; 
   transition: transform 0.3s ease;
 }
+
 
 .card:hover {
   transform: translateY(-10px);
@@ -27,6 +36,7 @@ body {
 .social-icons .btn {
   margin: 0 10px;
 }
+
 
 /* Skills Section */
 #skills .card {
