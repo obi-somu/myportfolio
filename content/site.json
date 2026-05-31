@@ -1,92 +1,85 @@
 {
   "brand": "Clinton Obi",
-  "name": "Clinton Obi",
-  "location": "Malta",
-  "headline": "Digital Marketer and IT Support professional focused on SEO, content strategy, technical support, data analysis and AI-supported workflows.",
-  "intro": "I combine IT support, digital marketing, content strategy and AI-supported workflows to help organisations solve technical problems, improve visibility and execute with better structure.",
-  "availability": "Open to IT Support and Digital Marketing opportunities in Malta and across Europe.",
-  "about": "I am a Computer Science graduate and Malta-based professional with experience across IT support, digital marketing, hospitality operations, logistics, content systems and business development. My profile combines technical troubleshooting, customer-facing communication, SEO, content strategy, data analysis, AI-supported workflows and practical business execution.",
+  "name": "Somuadina (Clinton) Obi",
+  "location": "Sliema, Malta",
+  "headline": "IT Specialist and Digital Marketer focused on technical support, SEO, content strategy, data and AI-supported workflows.",
+  "intro": "I work across IT support, technical systems and digital marketing, combining technical problem-solving, organised execution and reliable support for teams and digital operations.",
+  "availability": "Open to IT Specialist, IT Support, Digital Marketing and hybrid technical roles in Malta and remotely.",
+  "about": "I work across IT support and digital marketing, bringing together technical problem-solving, organised execution and a strong understanding of how systems and communication support daily operations. My background includes troubleshooting, hardware diagnostics, software installation, account administration, routine system checks, SEO, content strategy, social media planning, analytics and AI-supported workflows.",
   "profileImage": "assets/profile-pic.jpg",
   "cv": "assets/resume.pdf",
-  "contactText": "For IT Support, Digital Marketing, SEO, content strategy or operations-focused opportunities, contact me directly.",
+  "contactText": "For IT Support, Digital Marketing, SEO, content strategy, technical operations or hybrid digital roles, contact me directly.",
   "metrics": [
-    { "value": "12+", "label": "Years across IT, operations and business support" },
-    { "value": "2", "label": "Core career tracks: IT Support and Digital Marketing" },
-    { "value": "EU", "label": "Malta-based professional experience" }
+    { "value": "10K+", "label": "LinkedIn followers" },
+    { "value": "2", "label": "Professional focus areas" },
+    { "value": "EU", "label": "Malta-based experience" }
   ],
   "experience": [
     {
-      "role": "Front Office and Guest Operations",
-      "company": "Hospitality, Malta",
-      "period": "Current",
+      "role": "Marketing Executive",
+      "company": "Novotel Hotels",
+      "period": "Dec 2025 - Present · Malta",
       "bullets": [
-        "Manage guest-facing interactions in a fast-paced European hospitality environment, strengthening communication, confidence and service recovery skills.",
-        "Handle front-office responsibilities with attention to detail, calm judgement and professional issue resolution during overnight operations.",
-        "Build transferable customer support experience relevant to IT helpdesk, service desk and client-facing digital support roles."
+        "Execute SEO and digital marketing activity to strengthen organic visibility, search performance and qualified traffic acquisition.",
+        "Manage social media platforms and content calendars to support brand consistency, audience engagement and digital presence.",
+        "Monitor website and campaign performance using Google Analytics and Google Search Console to identify optimisation opportunities.",
+        "Assist with email marketing workflows and automated customer journeys aligned with commercial objectives."
       ]
     },
     {
-      "role": "Digital Marketing, SEO and Content Strategy",
-      "company": "Independent Projects and Brand Development",
-      "period": "Ongoing",
+      "role": "Digital Strategy Lead",
+      "company": "Somulux Enterprise",
+      "period": "Mar 2025 - Apr 2026 · Nigeria",
       "bullets": [
-        "Plan SEO-aware content, brand messaging and publishing workflows for digital projects, including Starwhim Press and personal brand assets.",
-        "Use AI-supported research, keyword thinking, content planning and editorial structure to improve clarity, visibility and execution speed.",
-        "Develop practical digital marketing capability across social media, WordPress, landing pages, analytics, email marketing and campaign planning."
+        "Managed digital content systems, publishing workflows and brand communication across multiple platforms.",
+        "Improved engagement through SEO-aligned content, analytics-based timing and structured planning.",
+        "Designed visuals and marketing assets that strengthened brand identity and audience retention.",
+        "Analysed performance metrics to refine strategy, product positioning and long-term digital growth."
       ]
     },
     {
-      "role": "IT Support and Technical Operations",
+      "role": "Logistics and Data Analyst",
+      "company": "Etisiobi Nig. Ltd",
+      "period": "Oct 2024 - Feb 2025 · Nigeria",
+      "bullets": [
+        "Analysed operational data to improve inventory forecasting, workflow clarity and reporting accuracy.",
+        "Built dashboards that supported faster decision-making and clearer visibility into operational performance.",
+        "Identified behavioural patterns that supported segmentation, targeted communication and process improvement.",
+        "Organised data structures and reporting processes to strengthen day-to-day operational execution."
+      ]
+    },
+    {
+      "role": "Technical Sales Representative",
+      "company": "Mamtus Nigeria",
+      "period": "Mar 2024 - Sep 2024 · Nigeria",
+      "bullets": [
+        "Provided technical guidance to customers, improving product understanding and purchase confidence.",
+        "Delivered clear product demonstrations and translated technical information into practical customer benefits.",
+        "Wrote accurate technical descriptions for online product listings and digital sales communication.",
+        "Coordinated with suppliers and internal teams to support stock flow, delivery accuracy and customer satisfaction."
+      ]
+    },
+    {
+      "role": "IT Systems and Network Support Specialist",
       "company": "Institute of Management and Technology",
-      "period": "2018 - 2019",
+      "period": "Nov 2018 - Oct 2019 · Nigeria",
       "bullets": [
-        "Supported users with workstation setup, software installation, troubleshooting, basic networking issues and technical problem resolution.",
-        "Assisted with malware removal, patching, system maintenance and day-to-day reliability of administrative and academic computer systems.",
-        "Built a practical foundation in user support, technical documentation, hardware/software support and structured problem-solving."
+        "Maintained system uptime through proactive monitoring, troubleshooting and routine technical support.",
+        "Delivered software updates, security patches and system improvements for institutional users.",
+        "Resolved hardware and network issues with reliability, structure and attention to operational continuity.",
+        "Trained staff in digital tools, supported audits and contributed to stronger compliance for institutional systems."
       ]
     }
   ],
   "projects": [
-    {
-      "title": "Starwhim Press",
-      "description": "A premium children’s publishing brand focused on emotionally intelligent stories, child-centred learning and parent-aware digital content.",
-      "image": "assets/masteringpython.png",
-      "url": "#contact",
-      "label": "Discuss project"
-    },
-    {
-      "title": "SEO and Content Workflow System",
-      "description": "A structured workflow for research, content planning, keyword alignment, editorial positioning and AI-supported publishing execution.",
-      "image": "assets/hustlersmindset.png",
-      "url": "#contact",
-      "label": "Discuss work"
-    },
-    {
-      "title": "Technical Learning and Publishing",
-      "description": "Author-led technical education and publishing work covering programming, AI prompting, digital skills and practical learning resources.",
-      "image": "assets/solidityfornewbies.png",
-      "url": "#contact",
-      "label": "View details"
-    }
+    { "title": "Starwhim Press", "description": "A premium children’s publishing brand focused on emotionally intelligent stories, child-centred learning and parent-aware digital content.", "image": "assets/masteringpython.png", "url": "#contact", "label": "Discuss project" },
+    { "title": "SEO and Content Workflow System", "description": "A structured workflow for research, content planning, keyword alignment, editorial positioning and AI-supported publishing execution.", "image": "assets/hustlersmindset.png", "url": "#contact", "label": "Discuss work" },
+    { "title": "Technical Learning and Publishing", "description": "Author-led technical education and publishing work covering programming, AI prompting, digital skills and practical learning resources.", "image": "assets/solidityfornewbies.png", "url": "#contact", "label": "View details" }
   ],
-  "certifications": [
-    "Google Digital Marketing Foundations",
-    "Python Programming",
-    "Data Analysis",
-    "Git Essentials",
-    "Microsoft Excel",
-    "SEO and Content Strategy",
-    "AI-Supported Workflows"
-  ],
+  "certifications": ["Canva Design Essentials", "AI Visibility Essentials with Semrush", "Google Digital Marketing Foundations", "Search Engine Optimization", "Python Programming", "Data Analysis", "Git Essentials", "Microsoft Excel"],
   "skills": [
-    {
-      "group": "IT Support",
-      "items": ["Troubleshooting", "User Support", "Windows Setup", "Software Installation", "Hardware Support", "System Maintenance", "Malware Removal", "Technical Documentation"]
-    },
-    {
-      "group": "Digital Marketing",
-      "items": ["SEO", "Content Strategy", "Social Media", "WordPress", "Analytics", "Email Marketing", "Landing Pages", "AI-Assisted Research"]
-    }
+    { "group": "IT Support", "items": ["Troubleshooting", "Hardware Diagnostics", "Software Installation", "Account Administration", "Routine System Checks", "System Administration", "Network Support", "Technical Documentation"] },
+    { "group": "Digital Marketing", "items": ["SEO", "Content Strategy", "Social Media Planning", "Google Analytics", "Google Search Console", "Email Marketing", "Campaign Planning", "AI-Supported Workflows"] }
   ],
   "contactLinks": [
     { "label": "Email", "url": "mailto:realclintonobi@gmail.com" },
