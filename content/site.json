@@ -1,0 +1,64 @@
+{
+  "brand": "Clinton Obi",
+  "name": "Clinton Obi",
+  "location": "Malta",
+  "headline": "IT Support and Digital Marketing professional focused on technical support, SEO, content strategy, data and AI-supported workflows.",
+  "intro": "I help organisations solve technical problems, improve digital visibility, organise content systems and use data-backed workflows to make better decisions.",
+  "availability": "Open to IT Support and Digital Marketing opportunities in Malta and Europe.",
+  "about": "I am a Computer Science graduate and multidisciplinary professional with experience across IT support, digital marketing, hospitality operations, logistics, technical operations, content systems and business development. My current career direction is focused on IT Support and Digital Marketing, combining practical troubleshooting, customer-facing communication, SEO, content strategy, analytics and AI-supported workflows.",
+  "profileImage": "assets/profile-pic.jpg",
+  "cv": "assets/resume.pdf",
+  "contactText": "For IT Support, Digital Marketing, SEO, content strategy or operations-focused opportunities, contact me directly.",
+  "metrics": [
+    { "value": "12+", "label": "Years across IT, operations and business support" },
+    { "value": "2", "label": "Core career tracks: IT Support and Digital Marketing" },
+    { "value": "EU", "label": "Malta-based professional experience" }
+  ],
+  "experience": [
+    {
+      "role": "Front Office and Customer-Facing Operations",
+      "company": "Hospitality, Malta",
+      "period": "Current",
+      "bullets": [
+        "Developing stronger customer communication, service recovery and front-facing confidence in a European hospitality environment.",
+        "Handling guest-facing responsibilities that strengthen professionalism, composure and operational discipline.",
+        "Using the role strategically while preparing for transition into IT Support or Digital Marketing."
+      ]
+    },
+    {
+      "role": "Digital Marketing and Content Strategy",
+      "company": "Independent Projects",
+      "period": "Ongoing",
+      "bullets": [
+        "Building SEO-aware content systems, publishing workflows and brand visibility strategies.",
+        "Working with AI-supported research, content planning and digital execution workflows.",
+        "Developing practical knowledge across social media, SEO, WordPress, analytics and digital campaigns."
+      ]
+    },
+    {
+      "role": "IT Specialist",
+      "company": "Institute of Management and Technology",
+      "period": "2018 - 2019",
+      "bullets": [
+        "Supported workstation setup, software installation, troubleshooting and user support.",
+        "Assisted with malware removal, patching, system maintenance and technical issue resolution.",
+        "Helped maintain reliable systems for administrative and academic users."
+      ]
+    }
+  ],
+  "projects": [
+    { "title": "Starwhim Press", "description": "A premium children’s publishing brand focused on emotionally intelligent stories, child-centred learning and parent-aware digital content.", "image": "assets/masteringpython.png", "url": "#contact", "label": "Discuss project" },
+    { "title": "SEO and Content Workflow System", "description": "A structured workflow for research, content planning, keyword alignment, editorial positioning and AI-supported publishing execution.", "image": "assets/hustlersmindset.png", "url": "#contact", "label": "Discuss work" },
+    { "title": "Technical Learning and Publishing", "description": "Author-led technical education and publishing work covering programming, AI prompting, digital skills and practical learning resources.", "image": "assets/solidityfornewbies.png", "url": "#contact", "label": "View details" }
+  ],
+  "certifications": ["Google Digital Marketing Foundations", "Python Programming", "Data Analysis", "Git Essentials", "Microsoft Excel", "SEO and Content Strategy", "AI-Supported Workflows"],
+  "skills": [
+    { "group": "IT Support", "items": ["Troubleshooting", "User Support", "Windows Setup", "Software Installation", "Hardware Support", "System Maintenance", "Malware Removal", "Technical Documentation"] },
+    { "group": "Digital Marketing", "items": ["SEO", "Content Strategy", "Social Media", "WordPress", "Analytics", "Email Marketing", "Landing Pages", "AI-Assisted Research"] }
+  ],
+  "contactLinks": [
+    { "label": "Email", "url": "#contact" },
+    { "label": "LinkedIn", "url": "#contact" },
+    { "label": "GitHub", "url": "#contact" }
+  ]
+}
