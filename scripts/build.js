@@ -3,11 +3,13 @@ const path = require("path");
 
 const requiredFiles = [
   "index.html",
+  "__forms.html",
   "css/style.css",
   "js/app.js",
   "content/site.json",
   "admin/index.html",
-  "admin/config.yml"
+  "admin/config.yml",
+  "admin-unauthorized.html"
 ];
 
 const missing = requiredFiles.filter((file) => !fs.existsSync(path.join(process.cwd(), file)));

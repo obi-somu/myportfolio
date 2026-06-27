@@ -225,6 +225,16 @@ img { max-width: 100%; display: block; }
   font: inherit;
 }
 .contact-form input:focus, .contact-form textarea:focus { outline: 2px solid rgba(23, 23, 23, 0.15); border-color: var(--text); }
+.contact-form button:disabled { cursor: wait; opacity: 0.72; transform: none; }
+.form-status {
+  min-height: 1.4em;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.form-status[data-state="success"] { color: #2c7a4b; }
+.form-status[data-state="error"] { color: #9a3412; }
 .hidden { display: none; }
 .site-footer {
   max-width: var(--max-width);

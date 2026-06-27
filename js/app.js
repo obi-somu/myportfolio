@@ -134,19 +134,58 @@ const initialiseMenu = () => {
   nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => nav.classList.remove("is-open")));
 };
 
-const initialiseNetlifyIdentity = () => {
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
-      if (!user && window.location.hash.includes("invite_token")) {
-        window.netlifyIdentity.open("signup");
+const initialiseContactForm = () => {
+  const form = document.getElementById("contact-form");
+  if (!form) return;
+
+  const status = form.querySelector(".form-status");
+  const submit = form.querySelector('button[type="submit"]');
+  const defaultSubmitText = submit ? submit.textContent : "";
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    if (status) {
+      status.textContent = "";
+      status.dataset.state = "";
+    }
+
+    if (submit) {
+      submit.disabled = true;
+      submit.textContent = "Sending...";
+    }
+
+    try {
+      const response = await fetch(form.action || "/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(form)).toString()
+      });
+
+      if (!response.ok) throw new Error("Form submission failed");
+
+      form.reset();
+      if (status) {
+        status.textContent = "Message sent. I will reply by email.";
+        status.dataset.state = "success";
       }
-    });
-  }
+    } catch (error) {
+      if (status) {
+        status.textContent = "Message could not be sent. Please email realclintonobi@gmail.com directly.";
+        status.dataset.state = "error";
+      }
+    } finally {
+      if (submit) {
+        submit.disabled = false;
+        submit.textContent = defaultSubmitText;
+      }
+    }
+  });
 };
 
 (async function init() {
   initialiseMenu();
-  initialiseNetlifyIdentity();
+  initialiseContactForm();
   document.getElementById("year").textContent = new Date().getFullYear();
   try {
     const response = await fetch("content/site.json", { cache: "no-store" });
