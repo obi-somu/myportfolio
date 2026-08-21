@@ -1,85 +1,52 @@
 # Clinton Obi Portfolio
 
-A premium minimalist personal portfolio for Clinton Obi, focused on IT Support, Digital Marketing, SEO, content strategy, data and AI-supported workflows.
+A fast, accessible portfolio for Somuadina (Clinton) Obi, focused on IT support, digital marketing, SEO, content systems, analytics and digital operations.
 
-The site is intentionally lightweight. It remains a static website, but includes an editable dashboard through Decap CMS so content can be updated without touching the code.
+## What is included
 
-## Main Features
+- Responsive editorial design with no external font dependency
+- Semantic, indexable fallback content plus CMS-driven updates from `content/site.json`
+- Real project destinations and lightweight code-native project visuals
+- Netlify Forms contact workflow with accessible status feedback
+- Invite-only Decap CMS architecture with an unprotected identity callback route
+- Administrator-only `/admin/` redirects enforced at Netlify's edge
+- Canonical, Open Graph, Twitter Card, sitemap, robots and Person JSON-LD metadata
+- Content Security Policy and other browser security headers
+- Keyboard-safe mobile navigation and reduced-motion support
+- Build checks for content dates, SEO, security, accessibility and social-card dimensions
 
-- Premium minimalist responsive design
-- Editable portfolio content stored in `content/site.json`
-- Admin dashboard available at `/admin/`
-- Netlify Forms-ready contact form
-- Netlify-friendly deployment setup
-- Simple local development workflow
-
-## Project Structure
-
-```text
-.
-├── admin/
-│   ├── config.yml
-│   └── index.html
-├── assets/
-├── content/
-│   └── site.json
-├── css/
-│   └── style.css
-├── js/
-│   └── app.js
-├── scripts/
-│   └── build.js
-├── index.html
-├── netlify.toml
-├── package.json
-└── README.md
-```
-
-## Run Locally
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Then open the local URL shown in your terminal.
-
-## Build Check
+Run the validation gate with:
 
 ```bash
 npm run build
 ```
 
-This validates the required static files and checks that `content/site.json` is valid JSON.
+## Content administration
 
-## Editing Content
+Portfolio content is stored in `content/site.json`. Approved administrators sign in through `/admin-login/`; successful administrator sessions continue to `/admin/`.
 
-Most website text, sections, skills, projects, experience and links are controlled from:
+The public home page contains a small callback redirect so Netlify invitation, confirmation and recovery links are handed to the public sign-in route. The CMS bundle is pinned to Decap CMS `3.15.1`.
 
-```text
-content/site.json
-```
+## Required Netlify settings
 
-Once deployed on Netlify and CMS access is enabled, visit:
+These settings must remain aligned with the repository:
 
-```text
-/admin/
-```
+1. Identity registration: **Invite only**
+2. Email confirmations: **Required**
+3. Approved owner account: role **admin**
+4. Git Gateway access: role **admin**
+5. Form notification for `contact`: `realclintonobi@gmail.com`
+6. Production site visibility: **Public** after deployment verification
 
-## Netlify CMS Setup
+Do not make the `/admin-login/` route role-protected. It must remain reachable for invitation and account-recovery callbacks. The `/admin/` route and all descendants are protected by role-aware redirects in `netlify.toml`.
 
-To use the admin dashboard:
+## Deployment
 
-1. Deploy this repository to Netlify.
-2. In Netlify, enable Identity.
-3. Enable Git Gateway.
-4. Invite your email as a user.
-5. Visit `/admin/` on the live site.
-6. Log in and edit the portfolio content.
-
-## Important Notes
-
-- The default branch is `master`.
-- The site publishes from the repository root.
-- Uploaded media from the dashboard goes into the `assets` folder.
-- Keep `content/site.json` valid JSON if editing manually.
+Netlify publishes the repository root. The default branch is `master`, and Decap CMS writes approved content changes to that branch through Git Gateway.
