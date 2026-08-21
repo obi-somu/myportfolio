@@ -44,6 +44,8 @@ assertIncludes(home, 'name="twitter:card"', "Twitter metadata");
 assertIncludes(home, 'type="application/ld+json"', "structured data");
 assertIncludes(home, 'autocomplete="name"', "contact form");
 assertIncludes(home, 'autocomplete="email"', "contact form");
+assertIncludes(home, "case-study-list", "proof-led project layout");
+assertIncludes(home, "Digital Marketing Executive", "Novotel role title");
 assertIncludes(app, 'event.key === "Escape"', "mobile navigation keyboard handling");
 assertIncludes(app, 'aria-expanded', "mobile navigation state handling");
 assertIncludes(admin, "decap-cms@3.15.1", "pinned Decap CMS dependency");
@@ -55,6 +57,12 @@ assertIncludes(redirects, "X-Content-Type-Options", "security headers");
 
 if (content.experience?.[0]?.period !== "Nov 2025 – Early 2026") {
   throw new Error("Novotel employment status must end in early 2026.");
+}
+if (content.location !== "Malta" || content.basedIn !== "Malta") {
+  throw new Error("Public location must be shown as Malta only.");
+}
+if (content.projects.some((project) => !project.challenge || !project.contribution || !project.outcome)) {
+  throw new Error("Every project must include challenge, contribution and outcome proof.");
 }
 if (!content.projects?.length || content.projects.some((project) => project.image || !/^https:\/\//.test(project.url))) {
   throw new Error("Projects must use real HTTPS destinations and code-native visuals.");

@@ -1,23 +1,28 @@
 {
   "brand": "Clinton Obi",
-  "name": "Somuadina (Clinton) Obi",
+  "name": "Clinton Obi",
   "location": "Malta",
   "basedIn": "Malta",
   "headlinePrimary": "Technical clarity.",
   "headlineAccent": "Digital momentum.",
   "intro": "I help teams solve technical problems, organise digital systems and turn data into focused marketing action.",
   "availability": "Open to opportunities",
+  "aboutHeading": "Bridging systems and visibility.",
   "aboutLead": "I am a Computer Science graduate with experience across IT support, digital marketing, technical operations, logistics and content systems.",
   "aboutDetail": "My value sits at the intersection: I can diagnose the system, explain the issue clearly, organise the workflow and help the result reach the right audience.",
   "profileImage": "/assets/profile-pic.jpg",
   "cv": "/assets/resume.pdf",
+  "projectsIntro": "Selected work showing how I approach a problem, shape the system and move it towards a useful result.",
+  "experienceIntro": "Technical fluency with the commercial awareness to connect daily work to wider goals.",
+  "capabilitiesIntro": "Flexible enough for hybrid roles, structured enough to own a clear remit.",
+  "contactHeading": "Have a technical or digital challenge?",
   "contactText": "Let us discuss IT support, digital marketing, SEO, content systems or a hybrid role where both skill sets matter.",
   "experience": [
     {
       "period": "Nov 2025 – Early 2026",
-      "role": "Marketing Executive",
-      "company": "Novotel Hotels · Malta",
-      "summary": "Supported search visibility, campaign delivery, content calendars and performance reporting across the hotel’s digital channels.",
+      "role": "Digital Marketing Executive",
+      "company": "Novotel Malta · Malta",
+      "summary": "Supported search visibility, campaign delivery, content calendars and performance reporting across the hotel's digital channels.",
       "tags": ["SEO", "Analytics", "Social media", "Email marketing"]
     },
     {
@@ -52,30 +57,36 @@
   "projects": [
     {
       "number": "01",
-      "type": "Publishing brand",
+      "type": "Publishing and digital strategy",
       "title": "Starwhim Press",
-      "description": "A child-centred publishing brand shaped around emotionally intelligent stories, clear positioning and parent-aware digital content.",
+      "summary": "A child-centred publishing brand built around emotionally intelligent stories and parent-aware digital content.",
+      "challenge": "Create a trusted publishing presence that could support discovery beyond individual book listings.",
+      "contribution": "Shaped the positioning, website, SEO content system and editorial workflow across the brand's digital channels.",
+      "outcome": "A coherent platform connecting story-led products with useful, search-aware resources for parents and caregivers.",
       "url": "https://starwhimpress.com",
-      "label": "Visit Starwhim Press",
-      "mark": "SW"
+      "label": "Visit Starwhim Press"
     },
     {
       "number": "02",
-      "type": "Web engineering",
+      "type": "Web systems and accessibility",
       "title": "Portfolio system",
-      "description": "A fast, accessible portfolio with an editable content layer, secure invite-only administration and Netlify-native forms.",
+      "summary": "A focused professional home for an interdisciplinary career spanning technical support and digital growth.",
+      "challenge": "Present two complementary skill sets without making the professional story feel fragmented.",
+      "contribution": "Designed the information architecture, responsive interface, accessible interaction patterns and secure content workflow.",
+      "outcome": "One fast, maintainable destination where recruiters can understand the profile, evidence and next step quickly.",
       "url": "https://github.com/obi-somu/myportfolio",
-      "label": "View the repository",
-      "mark": "{ }"
+      "label": "View the repository"
     },
     {
       "number": "03",
-      "type": "Technical publishing",
+      "type": "Research and technical communication",
       "title": "Learning resources",
-      "description": "Practical education work spanning programming, AI-supported workflows, digital skills and technical communication.",
+      "summary": "Practical education work across programming, AI-supported workflows, digital skills and clear technical communication.",
+      "challenge": "Turn complex tools and concepts into material that people can understand and apply.",
+      "contribution": "Combined research, structured explanation, examples and reusable workflows for different levels of technical confidence.",
+      "outcome": "A growing body of practical resources that connects technical learning with real-world execution.",
       "url": "https://github.com/obi-somu",
-      "label": "Explore the work",
-      "mark": "//"
+      "label": "Explore the work"
     }
   ],
   "certifications": [
@@ -91,14 +102,17 @@
   "skills": [
     {
       "group": "IT support",
+      "description": "Reliable help for people, devices and everyday systems.",
       "items": ["Troubleshooting", "Hardware diagnostics", "Software installation", "Network support", "System administration", "Technical documentation"]
     },
     {
       "group": "Digital growth",
+      "description": "Focused visibility built on useful content and evidence.",
       "items": ["SEO", "Content strategy", "Google Analytics", "Google Search Console", "Campaign planning", "Email marketing"]
     },
     {
       "group": "Operations",
+      "description": "Clear workflows and reporting that improve execution.",
       "items": ["Data analysis", "Reporting", "Workflow design", "Account administration", "Process improvement", "AI-supported workflows"]
     }
   ],
