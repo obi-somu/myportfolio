@@ -25,19 +25,15 @@ const renderProjects = (items) => {
   target.innerHTML = items
     .map(
       (item, index) => `
-        <article class="project-card">
-          <div class="project-visual" aria-hidden="true">
-            <span class="project-number">${escapeHtml(item.number || String(index + 1).padStart(2, "0"))}</span>
-            <strong>${escapeHtml(item.mark || "CO")}</strong>
-            <span class="project-type">${escapeHtml(item.type || "Selected work")}</span>
-          </div>
-          <div class="project-copy">
+        <a class="project-row" href="${safeUrl(item.url)}" target="_blank" rel="noopener" aria-label="${escapeHtml(item.label || "View project")}: ${escapeHtml(item.title)}">
+          <span class="project-number">${escapeHtml(item.number || String(index + 1).padStart(2, "0"))}</span>
+          <div class="project-title">
             <p>${escapeHtml(item.type || "Selected work")}</p>
             <h3>${escapeHtml(item.title)}</h3>
-            <p class="project-description">${escapeHtml(item.description)}</p>
-            <a href="${safeUrl(item.url)}" target="_blank" rel="noopener">${escapeHtml(item.label || "View project")} <span aria-hidden="true">↗</span></a>
           </div>
-        </article>`
+          <p class="project-description">${escapeHtml(item.description)}</p>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </a>`
     )
     .join("");
 };
@@ -51,10 +47,10 @@ const renderExperience = (items) => {
       (item) => `
         <article class="timeline-item">
           <p class="timeline-period">${escapeHtml(item.period)}</p>
-          <div><h3>${escapeHtml(item.role)}</h3><p class="timeline-company">${escapeHtml(item.company)}</p></div>
-          <div>
-            <p class="timeline-summary">${escapeHtml(item.summary)}</p>
-            <ul class="tag-list" aria-label="${escapeHtml(item.role)} skills">
+          <div class="timeline-title"><h3>${escapeHtml(item.role)}</h3><p>${escapeHtml(item.company)}</p></div>
+          <div class="timeline-detail">
+            <p>${escapeHtml(item.summary)}</p>
+            <ul aria-label="${escapeHtml(item.role)} skills">
               ${(item.tags || []).map((tag) => `<li>${escapeHtml(tag)}</li>`).join("")}
             </ul>
           </div>
@@ -67,12 +63,18 @@ const renderSkills = (groups) => {
   if (!Array.isArray(groups) || !groups.length) return;
   const target = document.getElementById("skill-list");
   if (!target) return;
+  const descriptions = {
+    "it support": "Keeping people productive and systems dependable.",
+    "digital growth": "Turning content and data into visible progress.",
+    operations: "Making workflows clearer, faster and easier to manage.",
+  };
   target.innerHTML = groups
     .map(
       (group, index) => `
         <article class="skill-card">
-          <span aria-hidden="true">${String(index + 1).padStart(2, "0")}</span>
+          <span class="skill-number" aria-hidden="true">${String(index + 1).padStart(2, "0")}</span>
           <h3>${escapeHtml(group.group)}</h3>
+          <p>${escapeHtml(descriptions[String(group.group || "").toLowerCase()] || "Practical capability applied to real work.")}</p>
           <ul>${(group.items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
         </article>`
     )
@@ -96,7 +98,7 @@ const renderContactLinks = (links) => {
     .map((link) => {
       const url = safeUrl(link.url);
       const external = url.startsWith("http") ? ' target="_blank" rel="noopener"' : "";
-      return `<a href="${url}"${external}>${escapeHtml(link.label)}</a>`;
+      return `<a href="${url}"${external}>${escapeHtml(link.label)} ↗</a>`;
     })
     .join("");
 };
