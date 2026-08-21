@@ -25,17 +25,20 @@ const renderProjects = (items) => {
   target.innerHTML = items
     .map(
       (item, index) => `
-        <article class="project-card">
-          <div class="project-visual" aria-hidden="true">
-            <span class="project-number">${escapeHtml(item.number || String(index + 1).padStart(2, "0"))}</span>
-            <strong>${escapeHtml(item.mark || "CO")}</strong>
-            <span class="project-type">${escapeHtml(item.type || "Selected work")}</span>
-          </div>
-          <div class="project-copy">
+        <article class="case-study">
+          <div class="case-study-index">
+            <span>${escapeHtml(item.number || String(index + 1).padStart(2, "0"))}</span>
             <p>${escapeHtml(item.type || "Selected work")}</p>
+          </div>
+          <div class="case-study-main">
             <h3>${escapeHtml(item.title)}</h3>
-            <p class="project-description">${escapeHtml(item.description)}</p>
-            <a href="${safeUrl(item.url)}" target="_blank" rel="noopener">${escapeHtml(item.label || "View project")} <span aria-hidden="true">↗</span></a>
+            <p class="case-study-summary">${escapeHtml(item.summary)}</p>
+            <dl class="proof-grid">
+              <div><dt>Challenge</dt><dd>${escapeHtml(item.challenge)}</dd></div>
+              <div><dt>Contribution</dt><dd>${escapeHtml(item.contribution)}</dd></div>
+              <div><dt>Outcome</dt><dd>${escapeHtml(item.outcome)}</dd></div>
+            </dl>
+            <a class="text-link" href="${safeUrl(item.url)}" target="_blank" rel="noopener">${escapeHtml(item.label || "View project")} <span aria-hidden="true">↗</span></a>
           </div>
         </article>`
     )
@@ -73,6 +76,7 @@ const renderSkills = (groups) => {
         <article class="skill-card">
           <span aria-hidden="true">${String(index + 1).padStart(2, "0")}</span>
           <h3>${escapeHtml(group.group)}</h3>
+          <p>${escapeHtml(group.description)}</p>
           <ul>${(group.items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
         </article>`
     )
@@ -102,7 +106,7 @@ const renderContactLinks = (links) => {
 };
 
 const applyContent = (data) => {
-  ["name", "location", "basedIn", "headlinePrimary", "headlineAccent", "intro", "availability", "aboutLead", "aboutDetail", "contactText"].forEach((key) => setText(key, data[key]));
+  ["name", "location", "basedIn", "headlinePrimary", "headlineAccent", "intro", "availability", "aboutHeading", "aboutLead", "aboutDetail", "projectsIntro", "experienceIntro", "capabilitiesIntro", "contactHeading", "contactText"].forEach((key) => setText(key, data[key]));
 
   const profile = document.querySelector('[data-image="profile"]');
   if (profile && data.profileImage) {

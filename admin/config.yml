@@ -31,10 +31,15 @@ collections:
           - { label: "Headline, accent line", name: "headlineAccent", widget: "string" }
           - { label: "Introduction", name: "intro", widget: "text" }
           - { label: "Availability", name: "availability", widget: "string" }
+          - { label: "About heading", name: "aboutHeading", widget: "string" }
           - { label: "About, lead", name: "aboutLead", widget: "text" }
           - { label: "About, detail", name: "aboutDetail", widget: "text" }
           - { label: "Profile image", name: "profileImage", widget: "image" }
           - { label: "CV file", name: "cv", widget: "file" }
+          - { label: "Projects introduction", name: "projectsIntro", widget: "text" }
+          - { label: "Experience introduction", name: "experienceIntro", widget: "text" }
+          - { label: "Capabilities introduction", name: "capabilitiesIntro", widget: "text" }
+          - { label: "Contact heading", name: "contactHeading", widget: "string" }
           - { label: "Contact introduction", name: "contactText", widget: "text" }
           - label: "Experience"
             name: "experience"
@@ -54,10 +59,12 @@ collections:
               - { label: "Number", name: "number", widget: "string" }
               - { label: "Type", name: "type", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Challenge", name: "challenge", widget: "text" }
+              - { label: "Contribution", name: "contribution", widget: "text" }
+              - { label: "Outcome", name: "outcome", widget: "text" }
               - { label: "URL", name: "url", widget: "string" }
               - { label: "Link label", name: "label", widget: "string" }
-              - { label: "Short visual mark", name: "mark", widget: "string", hint: "Two or three characters, for example SW or //" }
           - { label: "Credentials", name: "certifications", widget: "list" }
           - label: "Capabilities"
             name: "skills"
@@ -65,6 +72,7 @@ collections:
             summary: "{{fields.group}}"
             fields:
               - { label: "Group", name: "group", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
               - { label: "Items", name: "items", widget: "list" }
           - label: "Contact links"
             name: "contactLinks"
