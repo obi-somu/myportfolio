@@ -2,10 +2,17 @@ backend:
   name: git-gateway
   branch: master
 
+publish_mode: simple
 local_backend: false
+site_url: https://clintonobi.netlify.app
+display_url: https://clintonobi.netlify.app
+show_preview_links: false
 
-media_folder: "assets"
-public_folder: "assets"
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+editor:
+  preview: false
 
 collections:
   - name: "portfolio"
@@ -17,48 +24,52 @@ collections:
         format: "json"
         fields:
           - { label: "Brand", name: "brand", widget: "string" }
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Location", name: "location", widget: "string" }
-          - { label: "Headline", name: "headline", widget: "text" }
-          - { label: "Intro", name: "intro", widget: "text" }
-          - { label: "Availability", name: "availability", widget: "text" }
-          - { label: "About", name: "about", widget: "text" }
-          - { label: "Profile Image", name: "profileImage", widget: "image", required: false }
-          - { label: "CV File", name: "cv", widget: "file", required: false }
-          - { label: "Contact Text", name: "contactText", widget: "text" }
-          - label: "Metrics"
-            name: "metrics"
-            widget: "list"
-            fields:
-              - { label: "Value", name: "value", widget: "string" }
-              - { label: "Label", name: "label", widget: "string" }
+          - { label: "Full name", name: "name", widget: "string" }
+          - { label: "Hero location", name: "location", widget: "string" }
+          - { label: "Based in", name: "basedIn", widget: "string" }
+          - { label: "Headline, first line", name: "headlinePrimary", widget: "string" }
+          - { label: "Headline, accent line", name: "headlineAccent", widget: "string" }
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - { label: "Availability", name: "availability", widget: "string" }
+          - { label: "About, lead", name: "aboutLead", widget: "text" }
+          - { label: "About, detail", name: "aboutDetail", widget: "text" }
+          - { label: "Profile image", name: "profileImage", widget: "image" }
+          - { label: "CV file", name: "cv", widget: "file" }
+          - { label: "Contact introduction", name: "contactText", widget: "text" }
           - label: "Experience"
             name: "experience"
             widget: "list"
+            summary: "{{fields.period}} · {{fields.role}}"
             fields:
-              - { label: "Role", name: "role", widget: "string" }
-              - { label: "Company", name: "company", widget: "string" }
               - { label: "Period", name: "period", widget: "string" }
-              - { label: "Bullets", name: "bullets", widget: "list" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Company and location", name: "company", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Skills", name: "tags", widget: "list" }
           - label: "Projects"
             name: "projects"
             widget: "list"
+            summary: "{{fields.number}} · {{fields.title}}"
             fields:
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Type", name: "type", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
-              - { label: "Image", name: "image", widget: "image", required: false }
-              - { label: "URL", name: "url", widget: "string", required: false }
-              - { label: "Button Label", name: "label", widget: "string", required: false }
-          - { label: "Certifications", name: "certifications", widget: "list" }
-          - label: "Skills"
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Link label", name: "label", widget: "string" }
+              - { label: "Short visual mark", name: "mark", widget: "string", hint: "Two or three characters, for example SW or //" }
+          - { label: "Credentials", name: "certifications", widget: "list" }
+          - label: "Capabilities"
             name: "skills"
             widget: "list"
+            summary: "{{fields.group}}"
             fields:
               - { label: "Group", name: "group", widget: "string" }
               - { label: "Items", name: "items", widget: "list" }
-          - label: "Contact Links"
+          - label: "Contact links"
             name: "contactLinks"
             widget: "list"
+            summary: "{{fields.label}}"
             fields:
               - { label: "Label", name: "label", widget: "string" }
               - { label: "URL", name: "url", widget: "string" }

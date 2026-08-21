@@ -1,115 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Clinton Obi portfolio for IT Support, Digital Marketing, SEO, content strategy, data and AI-supported workflows." />
-    <title>Clinton Obi | IT Support and Digital Marketing</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clinton Obi | IT Specialist and Digital Marketer</title>
+    <meta name="description" content="Somuadina (Clinton) Obi is a Malta-based IT specialist and digital marketer working across technical support, SEO, content systems, analytics and digital operations." />
+    <meta name="author" content="Somuadina Clinton Obi" />
+    <meta name="theme-color" content="#f4f0e7" />
+    <link rel="canonical" href="https://clintonobi.netlify.app/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/assets/profile-pic.jpg" as="image" fetchpriority="high" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Clinton Obi Portfolio" />
+    <meta property="og:url" content="https://clintonobi.netlify.app/" />
+    <meta property="og:title" content="Clinton Obi | IT Specialist and Digital Marketer" />
+    <meta property="og:description" content="Technical clarity and digital momentum across IT support, SEO, content systems and analytics." />
+    <meta property="og:image" content="https://clintonobi.netlify.app/assets/og-clinton-obi.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Clinton Obi, IT Support and Digital Marketing" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Clinton Obi | IT Specialist and Digital Marketer" />
+    <meta name="twitter:description" content="Technical clarity and digital momentum across IT support, SEO, content systems and analytics." />
+    <meta name="twitter:image" content="https://clintonobi.netlify.app/assets/og-clinton-obi.jpg" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/auth-redirect.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Somuadina Clinton Obi",
+        "alternateName": "Clinton Obi",
+        "url": "https://clintonobi.netlify.app/",
+        "image": "https://clintonobi.netlify.app/assets/profile-pic.jpg",
+        "jobTitle": "IT Specialist and Digital Marketer",
+        "address": { "@type": "PostalAddress", "addressLocality": "Sliema", "addressCountry": "MT" },
+        "sameAs": ["https://www.linkedin.com/in/obisomu/", "https://github.com/obi-somu"]
+      }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
-      <a class="brand" href="#top" data-text="brand">Clinton Obi</a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
+      <a class="brand" href="#top" aria-label="Clinton Obi, home">CO<span aria-hidden="true">.</span></a>
+      <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation">Menu</button>
+      <nav id="primary-navigation" aria-label="Primary navigation">
+        <a href="#work">Work</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#capabilities">Capabilities</a>
+        <a class="nav-cta" href="#contact">Start a conversation</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero section">
+    <main id="main-content">
+      <section class="hero" id="top">
         <div class="hero-copy">
-          <p class="eyebrow" data-text="location">Malta</p>
-          <h1 data-text="name">Clinton Obi</h1>
-          <p class="headline" data-text="headline">IT Support and Digital Marketing professional focused on technical support, SEO, content strategy, data and AI-supported workflows.</p>
-          <p class="intro" data-text="intro">I help organisations solve technical problems, improve digital visibility, organise content systems and use data-backed workflows to make better decisions.</p>
+          <p class="overline">IT support <span>·</span> Digital marketing <span>·</span> <span data-text="location">Malta</span></p>
+          <h1 data-text="name">Somuadina (Clinton) Obi</h1>
+          <p class="hero-headline"><span data-text="headlinePrimary">Technical clarity.</span> <em data-text="headlineAccent">Digital momentum.</em></p>
+          <p class="hero-intro" data-text="intro">I help teams solve technical problems, organise digital systems and turn data into focused marketing action.</p>
           <div class="hero-actions">
-            <a class="button primary" data-link="cv" href="assets/resume.pdf" download>Download CV</a>
-            <a class="button secondary" href="#contact">Contact Me</a>
+            <a class="button button-dark" href="#work">Explore selected work <span aria-hidden="true">↘</span></a>
+            <a class="button button-light" data-link="cv" href="/assets/resume.pdf" download>Download CV</a>
+          </div>
+          <dl class="hero-facts" aria-label="Professional summary">
+            <div><dt>Based in</dt><dd data-text="basedIn">Sliema, Malta</dd></div>
+            <div><dt>Focus</dt><dd>Support + growth</dd></div>
+            <div><dt>Availability</dt><dd><span class="status-dot" aria-hidden="true"></span> <span data-text="availability">Open to opportunities</span></dd></div>
+          </dl>
+        </div>
+
+        <div class="portrait-wrap" aria-label="Portrait of Clinton Obi">
+          <div class="portrait-frame">
+            <img data-image="profile" src="/assets/profile-pic.jpg" alt="Somuadina Clinton Obi" width="1024" height="1024" fetchpriority="high" />
+          </div>
+          <div class="portrait-label" aria-hidden="true"><span>Systems</span><span>Strategy</span><span>Support</span></div>
+          <div class="portrait-stamp" aria-hidden="true"><strong>CO</strong><span>Malta · 2026</span></div>
+        </div>
+      </section>
+
+      <section class="signal-strip" aria-label="Areas of expertise">
+        <span>IT support</span><span>SEO + analytics</span><span>Content systems</span><span>Operational data</span>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-label"><span>01</span> Profile</div>
+        <div class="about-copy">
+          <h2>Bridging systems and visibility.</h2>
+          <div class="about-columns">
+            <p data-text="aboutLead">I am a Computer Science graduate with experience across IT support, digital marketing, technical operations, logistics and content systems.</p>
+            <p data-text="aboutDetail">My value sits at the intersection: I can diagnose the system, explain the issue clearly, organise the workflow and help the result reach the right audience.</p>
           </div>
         </div>
-        <aside class="hero-card" aria-label="Profile summary">
-          <img data-image="profile" src="assets/profile-pic.jpg" alt="Clinton Obi" />
-          <div class="profile-note">
-            <span class="status-dot" aria-hidden="true"></span>
-            <p data-text="availability">Open to IT Support and Digital Marketing opportunities in Malta and Europe.</p>
-          </div>
-        </aside>
       </section>
 
-      <section id="about" class="section split-section">
+      <section class="section work-section" id="work">
+        <div class="section-label"><span>02</span> Selected work</div>
+        <div class="section-heading-row"><h2>Projects with purpose.</h2><p>Strategy, systems and communication brought together in practical work.</p></div>
+        <div class="project-grid" id="project-list">
+          <article class="project-card">
+            <div class="project-visual" aria-hidden="true"><span class="project-number">01</span><strong>SW</strong><span class="project-type">Publishing brand</span></div>
+            <div class="project-copy"><p>Publishing brand</p><h3>Starwhim Press</h3><p class="project-description">A child-centred publishing brand shaped around emotionally intelligent stories, clear positioning and parent-aware digital content.</p><a href="https://starwhimpress.com" target="_blank" rel="noopener">Visit Starwhim Press <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual" aria-hidden="true"><span class="project-number">02</span><strong>{ }</strong><span class="project-type">Web engineering</span></div>
+            <div class="project-copy"><p>Web engineering</p><h3>Portfolio system</h3><p class="project-description">A fast, accessible portfolio with an editable content layer, secure invite-only administration and Netlify-native forms.</p><a href="https://github.com/obi-somu/myportfolio" target="_blank" rel="noopener">View the repository <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual" aria-hidden="true"><span class="project-number">03</span><strong>//</strong><span class="project-type">Technical publishing</span></div>
+            <div class="project-copy"><p>Technical publishing</p><h3>Learning resources</h3><p class="project-description">Practical education work spanning programming, AI-supported workflows, digital skills and technical communication.</p><a href="https://github.com/obi-somu" target="_blank" rel="noopener">Explore the work <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience">
+        <div class="section-label"><span>03</span> Experience</div>
+        <div class="section-heading-row"><h2>A cross-functional track record.</h2><p>Technical fluency with the commercial awareness to connect daily work to wider goals.</p></div>
+        <div class="timeline" id="experience-list">
+          <article class="timeline-item"><p class="timeline-period">Nov 2025 – Early 2026</p><div><h3>Marketing Executive</h3><p class="timeline-company">Novotel Hotels · Malta</p></div><div><p class="timeline-summary">Supported search visibility, campaign delivery, content calendars and performance reporting across the hotel’s digital channels.</p><ul class="tag-list"><li>SEO</li><li>Analytics</li><li>Social media</li><li>Email marketing</li></ul></div></article>
+          <article class="timeline-item"><p class="timeline-period">Mar 2025 – Apr 2026</p><div><h3>Digital Strategy Lead</h3><p class="timeline-company">Somulux Enterprise · Nigeria</p></div><div><p class="timeline-summary">Built structured publishing workflows and used content, design and performance data to strengthen digital positioning.</p><ul class="tag-list"><li>Content systems</li><li>Brand strategy</li><li>Reporting</li></ul></div></article>
+          <article class="timeline-item"><p class="timeline-period">Oct 2024 – Feb 2025</p><div><h3>Logistics and Data Analyst</h3><p class="timeline-company">Etisiobi Nig. Ltd · Nigeria</p></div><div><p class="timeline-summary">Organised operational data and reporting to improve forecasting, workflow visibility and day-to-day decision-making.</p><ul class="tag-list"><li>Data analysis</li><li>Dashboards</li><li>Operations</li></ul></div></article>
+          <article class="timeline-item"><p class="timeline-period">Mar 2024 – Sep 2024</p><div><h3>Technical Sales Representative</h3><p class="timeline-company">Mamtus Nigeria · Nigeria</p></div><div><p class="timeline-summary">Translated technical product information into practical guidance, demonstrations and clear digital sales content.</p><ul class="tag-list"><li>Technical support</li><li>Documentation</li><li>Customer success</li></ul></div></article>
+          <article class="timeline-item"><p class="timeline-period">Nov 2018 – Oct 2019</p><div><h3>IT Systems and Network Support Specialist</h3><p class="timeline-company">Institute of Management and Technology · Nigeria</p></div><div><p class="timeline-summary">Resolved hardware, software and network issues while supporting updates, routine checks, training and system continuity.</p><ul class="tag-list"><li>Troubleshooting</li><li>Networks</li><li>System administration</li></ul></div></article>
+        </div>
+      </section>
+
+      <section class="section capabilities-section" id="capabilities">
+        <div class="section-label light"><span>04</span> Capabilities</div>
+        <div class="capabilities-intro"><h2>One profile. Three useful lenses.</h2><p>Flexible enough for hybrid roles, structured enough to own a clear remit.</p></div>
+        <div class="skill-grid" id="skill-list">
+          <article class="skill-card"><span>01</span><h3>IT support</h3><ul><li>Troubleshooting</li><li>Hardware diagnostics</li><li>Software installation</li><li>Network support</li><li>System administration</li><li>Technical documentation</li></ul></article>
+          <article class="skill-card"><span>02</span><h3>Digital growth</h3><ul><li>SEO</li><li>Content strategy</li><li>Google Analytics</li><li>Google Search Console</li><li>Campaign planning</li><li>Email marketing</li></ul></article>
+          <article class="skill-card"><span>03</span><h3>Operations</h3><ul><li>Data analysis</li><li>Reporting</li><li>Workflow design</li><li>Account administration</li><li>Process improvement</li><li>AI-supported workflows</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section credentials-section" id="credentials">
+        <div class="section-label"><span>05</span> Credentials</div>
+        <div class="credentials-layout">
+          <h2>Continuous learning, applied.</h2>
+          <ol class="credential-list" id="certification-list">
+            <li><span>01</span>Google Digital Marketing Foundations</li><li><span>02</span>AI Visibility Essentials with Semrush</li><li><span>03</span>Search Engine Optimization</li><li><span>04</span>Python Programming</li><li><span>05</span>Data Analysis</li><li><span>06</span>Git Essentials</li><li><span>07</span>Microsoft Excel</li><li><span>08</span>Canva Design Essentials</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
         <div>
-          <p class="section-kicker">About</p>
-          <h2>Focused, practical and commercially aware.</h2>
-        </div>
-        <div>
-          <p class="body-text" data-text="about">I am a Computer Science graduate and multidisciplinary professional with experience across IT support, digital marketing, logistics, technical operations, content systems and business development.</p>
-          <div class="metrics" id="metrics"></div>
-        </div>
-      </section>
-
-      <section id="experience" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Experience</p>
-          <h2>Recent professional direction</h2>
-        </div>
-        <div class="cards" id="experience-list"></div>
-      </section>
-
-      <section id="projects" class="section muted-section">
-        <div class="section-heading">
-          <p class="section-kicker">Projects</p>
-          <h2>Selected work and publications</h2>
-        </div>
-        <div class="cards project-grid" id="project-list"></div>
-      </section>
-
-      <section id="certifications" class="section">
-        <div class="section-heading">
-          <p class="section-kicker">Certifications</p>
-          <h2>Learning and credentials</h2>
-        </div>
-        <div class="pill-grid" id="certification-list"></div>
-      </section>
-
-      <section id="skills" class="section split-section">
-        <div>
-          <p class="section-kicker">Skills</p>
-          <h2>A hybrid profile for support, visibility and execution.</h2>
-        </div>
-        <div class="skill-columns" id="skill-list"></div>
-      </section>
-
-      <section id="contact" class="section contact-section">
-        <div class="contact-copy">
-          <p class="section-kicker">Contact</p>
-          <h2>Let us discuss the next opportunity.</h2>
-          <p data-text="contactText">For IT Support, Digital Marketing, SEO, content strategy or operations-focused opportunities, contact me directly.</p>
-          <div class="contact-links" id="contact-links"></div>
+          <p class="overline">Open to the right next step</p><h2>Have a technical or digital challenge?</h2>
+          <p data-text="contactText">Let us discuss IT support, digital marketing, SEO, content systems or a hybrid role where both skill sets matter.</p>
+          <div class="contact-links" id="contact-links"><a href="mailto:realclintonobi@gmail.com">Email</a><a href="https://www.linkedin.com/in/obisomu/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/obi-somu" target="_blank" rel="noopener">GitHub</a></div>
         </div>
         <form id="contact-form" name="contact" method="POST" action="/__forms.html" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
           <input type="hidden" name="form-name" value="contact" />
-          <p class="hidden"><label>Do not fill this out: <input name="bot-field" /></label></p>
-          <label>Name<input name="name" type="text" required /></label>
-          <label>Email<input name="email" type="email" required /></label>
+          <p class="hidden"><label>Do not fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+          <label>Name<input type="text" name="name" autocomplete="name" required /></label>
+          <label>Email<input type="email" name="email" autocomplete="email" inputmode="email" required /></label>
           <label>Message<textarea name="message" rows="5" required></textarea></label>
           <p class="form-status" role="status" aria-live="polite"></p>
-          <button class="button primary" type="submit">Send Message</button>
+          <button class="button button-accent" type="submit">Send message <span aria-hidden="true">→</span></button>
         </form>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Clinton Obi. All rights reserved.</p>
-    </footer>
-
-    <script src="js/app.js"></script>
+    <footer><a class="brand" href="#top" aria-label="Back to top">CO<span>.</span></a><p>© <span id="year">2026</span> Clinton Obi. Built for clarity.</p><a href="#top">Back to top ↑</a></footer>
+    <script src="/js/app.js" defer></script>
   </body>
 </html>
